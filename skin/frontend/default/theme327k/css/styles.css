@@ -669,7 +669,14 @@ img.lazy{max-width: 100%;height: auto;opacity: 0;}
 .header .welcome-msg a {}
 .header .links { float:right; font-size:13px; margin:1px 0 0 0; }
 .header .links li { float:left; padding:0; }
-.header .links li a { display:inline-block; margin:0 0 0 29px; color:#262626; }
+.header .links li a {
+	 display:inline-block; 
+	 margin:0 0 0 29px; 
+	 color:#262626;
+	 border: 1px solid !important;
+	 padding: 3px 4px !important;
+     border-radius: 15px !important; 
+}
 .header .links li a:hover { color:#72d5cd; }
 .left_links { float:left; }
 .header .left_links .links { float:left; }
@@ -1122,7 +1129,7 @@ img.lazy{max-width: 100%;height: auto;opacity: 0;}
 .products-grid button.button span span { padding:12px 52px 14px 24px; }
 .products-grid button.button > span:after { content:"\f07a"; position:absolute; right:24px; top:11px; font-size:25px; color:#68b9b2; }
 .products-grid button.button:hover > span:after { color:#72d5cd; }
-.products-grid .desc_grid { font-size:13px; font-weight:normal; line-height:20px; color:#777; margin-bottom:11px; }
+.products-grid .desc_grid { font-size:13px; font-weight:normal; line-height:20px; color:#777; margin-bottom:11px; display: none !important; }
 .add-to-links {float:left;}
 
 /******* Type: List and Grid ********/
@@ -2114,7 +2121,7 @@ img.lazy{max-width: 100%;height: auto;opacity: 0;}
 #checkout-step-login h3{ font-size:12px; text-transform:uppercase; font-weight:normal; color:#72d5cd;}
 #checkout-step-login .col2-set {border:1px solid #ececec;padding:20px; position:relative; overflow:hidden; }
 #checkout-step-login .col2-set .col-1 { float:left; margin-right:3%; width:46%; }
-#checkout-step-login .col2-set .col-2 { float:left; width:46%; }
+#checkout-step-login .col2-set .col-2 { float:left; width:46%; display: none !important; }
 #checkout-step-login .col2-set .buttons-set {margin:0;padding:0;}
 #checkout-step-login .col2-set > .col-1 h4{font-size:12px; text-transform:uppercase; font-weight:normal; color:#72d5cd;}
 #checkout-step-login .col2-set .col-2  h4{font-size:12px; text-transform:none; font-weight:normal; color:#7b7b7b;}
@@ -3332,10 +3339,8 @@ button.button > span,
 .header .form-search .search-autocomplete li {padding: 5px;}
 .header .form-search .search-autocomplete li img {margin-right: 10px;}
 .ps-phone .header .form-search .search-autocomplete {display: none !important;}
-
-
-
-
-
-
-
+.header .links li a {
+	border: 1px solid !important;
+    padding: 3px 4px !important;
+    border-radius: 15px !important;
+}

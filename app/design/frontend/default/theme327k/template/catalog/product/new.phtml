@@ -39,7 +39,7 @@
         <ul class="products-grid row">
         <?php endif ?>
             <li class="item col-xs-3<?php if(($i-1)%$_columnCount==0): ?> first<?php elseif($i%$_columnCount==0): ?> last<?php endif; ?>" itemscope itemtype="http://schema.org/product">
-                <div class="grid_wrap">
+                <div class="grid_wrap new_products_wrap">
                  <a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->htmlEscape($_product->getName()) ?>" class="product-image" itemprop="url"><img data-src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize(270) ?>" class="lazy" alt="<?php echo $this->htmlEscape($_product->getName()) ?>" src="<?php echo $this->getSkinurl('images/image_placeholder.jpg'); ?>" /></a>
                  <div class="product-shop">
                      <h3 class="product-name"><a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->htmlEscape($_product->getName()) ?>" itemprop="name"><?php echo $this->htmlEscape($_product->getName()) ?></a></h3>
@@ -67,4 +67,4 @@
         <?php endif ?>
     <?php endforeach; ?>
 <?php endif; ?>
-<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('new_arrivals')->toHtml() ?>
+<?php //echo $this->getLayout()->createBlock('cms/block')->setBlockId('new_arrivals')->toHtml() ?>
